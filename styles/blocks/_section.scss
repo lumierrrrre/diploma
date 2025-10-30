@@ -1,0 +1,15 @@
+.section {
+    padding-top: 40px;
+}
+
+#chartArea {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center; /* центрирует canvas, опционально */
+}
+
+#chartArea canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

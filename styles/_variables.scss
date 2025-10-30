@@ -1,0 +1,18 @@
+:root {
+    --color-dark: #000000;
+    --color-light: #FFFFFF;
+    --color-accent: #373062;
+    --color-alternate: #724796;
+
+    --border: 1px solid var(--color-dark);
+    --border-radius: 14px;
+
+    /*shadow*/
+
+    --font-family-base: 'Ubuntu', sans-serif;
+
+    --container-width: 1240px;
+    --container-padding-x: 20px;
+
+    --transition-duration: 0.2s;
+}

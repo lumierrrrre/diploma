@@ -1,0 +1,73 @@
+main {
+    flex: 1 0 auto;
+}
+
+.section.container {
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: relative;
+}
+
+.section,
+.step {
+    flex: 1;
+    transition: all 0.3s ease;
+    min-width: 0;
+}
+
+.step {
+    display: none;
+    width: 100%;
+
+    &--active {
+        display: block;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__navigation {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+}
+
+#backToStep1 {
+    font-size: 20px;
+    height: 60px;
+}
+
+#backToStep2 {
+    font-size: 20px;
+    height: 60px;
+}
+
+#backToStep3 {
+    font-size: 20px;
+    height: 60px;
+}
+
+#toStep4 {
+    font-size: 20px;
+    height: 60px;
+}
+

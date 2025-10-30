@@ -1,0 +1,54 @@
+.header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    position: relative;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    &__menu {
+        &-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 40px;
+        }
+
+        &-link {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            height: 48px;
+
+            @include hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                translate: -50%;
+                width: 0;
+                height: 2px;
+                background-color: currentColor;
+                transition-duration: inherit;
+            }
+        }
+    }
+}
